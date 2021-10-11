@@ -1,0 +1,76 @@
+$font_gr: 'Gilroy-SemiBold', sans-serif;
+$font_dp: 'Displace 2.0', sans-serif;
+$font_mt: 'Markazi Text', sans-serif;
+
+@font-face {
+  font-family: 'Gilroy-SemiBold';
+  src: url('../fonts/Gilroy-SemiBold.woff2') format('woff2'),
+      url('../fonts/Gilroy-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Displace 2.0';
+  src: url('../fonts/Displace20-Medium.woff2') format('woff2'),
+      url('../fonts/Displace20-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Displace 2.0';
+  src: url('../fonts/Displace20-Regular.woff2') format('woff2'),
+      url('../fonts/Displace20-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Displace 2.0';
+  src: url('../fonts/Displace20-Bold.woff2') format('woff2'),
+      url('../fonts/Displace20-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Markazi Text';
+  src: url('../fonts/MarkaziText-Bold.woff2') format('woff2'),
+      url('../fonts/MarkaziText-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Markazi Text';
+  src: url('../fonts/MarkaziText-Regular.woff2') format('woff2'),
+      url('../fonts/MarkaziText-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Markazi Text';
+  src: url('../fonts/MarkaziText-Medium.woff2') format('woff2'),
+      url('../fonts/MarkaziText-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Markazi Text';
+  src: url('../fonts/MarkaziText-SemiBold.woff2') format('woff2'),
+      url('../fonts/MarkaziText-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+

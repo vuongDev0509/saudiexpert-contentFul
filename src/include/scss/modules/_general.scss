@@ -1,0 +1,68 @@
+[lang="ar"] {
+  body {
+    font-family:'Markazi Text', sans-serif;
+    direction:rtl;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+  font-family:'Open Sans', sans-serif;
+  font-size:18px;
+  color:#333333;
+  background-color: #FCFCFC;
+  &.no-scroll {
+    overflow:hidden;
+  }
+}
+
+a {
+  transition:all .3s ease;
+  &:hover {
+    color:$primary;
+  }
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 82.6%;
+  @media (max-width: $mobile-width) {
+    width:100%;
+    padding:0 25px;
+  }
+}
+
+#main {
+  overflow:hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin-top:0;
+  margin-bottom:20px;
+}
+
+p {
+  line-height:1.5;
+  margin-bottom:30px;
+  margin-top:0;
+  font-weight:400;
+  font-size:16px;
+  &.lead {
+    font-size:20px;
+    font-weight:600;
+  }
+  @media (max-width: $screen-md-max) {
+    margin-bottom:20px;
+  }
+  @media (max-width: $screen-sm-max) {
+    font-size:16px;
+    &.lead {
+      font-size:18px;
+    }
+  }
+}
+
+.hidden {
+  display:none !important;
+}

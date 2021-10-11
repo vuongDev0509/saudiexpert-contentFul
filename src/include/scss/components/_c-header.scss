@@ -1,0 +1,135 @@
+$c-header-height: 100px;
+$c-header-mobile-height: 76px;
+
+[lang="ar"] {
+  body {
+  }
+  .c-header {
+    &__wrapper {
+      direction:rtl;
+    }
+  }
+
+}
+
+.c-header {
+  position: relative;
+  z-index:1000;
+  background-color: rgba(0,0,0,0.4);
+
+  @media (max-width: $mobile-width) {
+    background:#fff;
+  }
+
+  &__logo {
+    img.mobile {
+      display:none;
+    }
+    @media (max-width: $mobile-width) {
+      img.desktop {
+        display:none;
+      }
+      img.mobile {
+        display:block;
+      }
+    }
+  }
+
+  a {
+    color:#fff;
+    font-family:'Golroy-SemiBold', sans-serif;
+    font-weight:600;
+    text-decoration:none;
+    display:inline-block;
+  }
+
+  &__wrapper {
+    height:$c-header-height;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: $mobile-width) {
+      height:$c-header-mobile-height;
+    }
+  } 
+
+  &__nav {
+    @media (max-width: $mobile-width) {
+      display:none;
+    }
+    ul{
+      display:inline-block;
+      margin:0;
+    }
+    li {
+      padding:0;
+      list-style: none;
+      margin:0 20px;
+      display:inline-block;
+      @media (max-width: $screen-lg-max) {
+        margin:0 12px;
+      }
+      a {
+        height:$c-header-height - 2px;
+        display:flex;
+        align-items: center;
+        border-top:3px solid transparent;
+        border-bottom:3px solid transparent;
+        font-size:15px;
+        &:hover {
+          border-bottom:3px solid #fff;
+        }
+        @media (max-width: $mobile-width) {
+          height:$c-header-mobile-height - 2px;
+        }
+      }
+      &.active {
+        a {
+          border-bottom:3px solid #fff;
+        }
+      }
+    }
+  }
+
+  &__tools {
+    @media (max-width: $mobile-width) {
+      display:none;
+    }
+    ul{
+      display:inline-block;
+      margin:0;
+    }
+    li {
+      padding:0;
+      list-style: none;
+      margin:0 5px;
+      display:inline-block;
+    }
+    a.lang {
+      position: relative;
+      top:-2px;
+    }
+    .globe-language-text.globe-language-text-en{
+      font-size:14px;
+      font-weight: 600;
+      position: relative;
+      top:-3px;
+    }
+    .globe-language-text.globe-language-text-ar{
+      font-size:15px;
+      font-family: 'Markazi Text', sans-serif;
+      font-weight: 500;
+      position: relative;
+      top:-5px;
+    }
+  }
+
+  &__mobile-toggle {
+    display:none;
+    @media (max-width: $mobile-width) {
+      display:block;
+      cursor:pointer;
+    }
+  }
+
+}

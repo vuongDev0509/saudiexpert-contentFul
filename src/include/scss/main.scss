@@ -1,0 +1,38 @@
+$screen-lg-max: 1199px;
+$screen-md-max: 991px;
+$screen-sm-max: 767px;
+$screen-xs-max: 575px;
+$mobile-width: 1074px;
+$min_width: 481px; 
+$max_width: 1200px;
+
+$primary: #308138;
+
+// #check_site{
+//     background-color: #308138;
+// }
+
+// Modules
+@import "modules/normalise";
+@import "modules/mixins";
+@import "modules/fonts";
+@import "modules/form";
+@import "modules/general";
+@import "modules/button";
+
+// Plugins
+@import "plugins/select2";
+@import "plugins/easy-autocomplete";
+
+// Components
+@import "components/c-header";
+@import "components/c-mobile";
+@import "components/c-footer";
+@import "components/c-sehero";
+@import "components/c-secont";
+@import "components/c-senav";
+@import "components/c-seform";
+@import "components/c-sevents";
+
+// Pages
+@import "pages/home";

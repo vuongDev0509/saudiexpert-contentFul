@@ -1,0 +1,11 @@
+pipelines:
+  branches:
+    staging:
+      - step:
+          max-time: 5
+          name: Deploy Static MVP to S3 (Staging)
+          image: cgswong/aws
+          script:
+            - 'echo "{\"api\": \"https://devisl.sta.gov.sa/API\", \"sentry\": \"https://c4242249cabc4d2d87325995ea1355b6@o649933.ingest.sentry.io/5760358\", \"apiAuth\": \"https://anpt0is8ek.execute-api.me-south-1.amazonaws.com/dev/authencrypt\", \"debug\": true}" > env.json'
+            - aws s3 sync . s3://saudiexpert-staging.pensoagency.com --acl public-read --delete --exclude "bitbucket-pipelines.yml" --exclude ".gitignore" --exclude ".git/*"
+            - aws cloudfront create-invalidation --distribution-id E3198E9OQ2HG29 --paths "/*" --region=us-east-1 #saudiexpert-staging.pensoagency.com
